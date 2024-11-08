@@ -1,0 +1,537 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "SiM3IJ7irOR77fxESs4NY",
+            "query": "-- f. COMPARISON OPERATORS\n-- Retrieve orders where quantity is greater than 5\n\nSELECT * \nFROM 'Order'\nWHERE quantity > 5;\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Comparison_Operators",
+            "createdAt": "2024-11-07T12:51:05.707Z"
+        },
+        {
+            "id": "piLrewpJ1cFQcWfaVXT33",
+            "query": "-- To create Customer Table\n\nCREATE TABLE Customer (\ncustomerID INT PRIMARY KEY,\nname VARCHAR(100),\nemail VARCHAR(90) UNIQUE,\nphone_number VARCHAR(20),\naddress VARCHAR(255)\n);\n\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Customer_Table",
+            "createdAt": "2024-11-07T12:55:08.812Z"
+        },
+        {
+            "id": "uvArZI7AuMnfuBC0AcJ6u",
+            "query": "-- Insert data into Customer Table \n\nINSERT INTO Customer (customerID, name, email, phone_number, address)\nVALUES\n(1, 'John Doe', 'john@gmail.com', '123-456-7890', '123 Main St'),\n(2, 'Tom Harry', 'tom@yahoo.com', '123-678-3456', '456 Elm St'),\n(3, 'York Shire', 'york@email.com', '123-542-7890', '111 Cedar St'),\n(4, 'Kelly Rae', 'kelly@gmail.com', '123-098-5432', '654 Pine St'),\n(5, 'Sam Larry', 'sam@yahoo.com', '123-765-3278', '321 Maple St');\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Customer_Data",
+            "createdAt": "2024-11-07T12:55:29.039Z"
+        },
+        {
+            "id": "8sMbADFeDVUQ0UlET6TEl",
+            "query": "-- View Customer Table \n\nSELECT * \nFROM Customer;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "View_Customer_Data",
+            "createdAt": "2024-11-07T12:55:47.469Z"
+        },
+        {
+            "id": "mhRYTwrlqCwSl9SU7QjMd",
+            "query": "-- To create Product Table\n\nCREATE TABLE Product (\nproductID INT PRIMARY KEY,\nproductname VARCHAR(100),\ncategory VARCHAR(100),\nprice DECIMAL(10, 2)\n);\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Product_Table",
+            "createdAt": "2024-11-07T12:56:12.966Z"
+        },
+        {
+            "id": "jO97Lg0oa8Sn1MwkubU1p",
+            "query": "-- To insert data into Product Table\n\nINSERT INTO Product (productID, productname, category, price)\nVALUES \n(1, 'Laptop', 'Electronics', 2000.00),\n(2, 'Headphones', 'Electronics', 150.99),\n(3, 'Laptop', 'Electronics', 50000.00),\n(4, 'Tissue paper', 'Toiletries', 125.00),\n(5, 'Doughnuts', 'Snacks', 500.00);\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Product_Data",
+            "createdAt": "2024-11-07T12:56:32.124Z"
+        },
+        {
+            "id": "6B4EDmXYTt9tpANuxkVdg",
+            "query": "-- View data in Product Table \n\nSELECT * \nFROM Product;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "View_Product_Data",
+            "createdAt": "2024-11-07T12:56:48.717Z"
+        },
+        {
+            "id": "68MwMzCDZqxgyV2VLOaPW",
+            "query": "-- To create 'Order' Table\n\nCREATE TABLE 'Order' (\norderID INT PRIMARY KEY,\ncustomerID INT,\nproductID INT,\nquantity INT,\norder_date DATE,\nFOREIGN KEY (customerID) REFERENCES Customer(customerID),\nFOREIGN KEY (productID) REFERENCES Product(productID)\n);\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Order_Table",
+            "createdAt": "2024-11-07T12:57:01.582Z"
+        },
+        {
+            "id": "DVWZ5w2HRRtvp1pNx8Dmv",
+            "query": "-- Insert data into 'Order' Table \n\nINSERT INTO 'Order' (orderID, customerID, productID, quantity, order_date)\nVALUES \n(100, 1, 1, 2, '2024-07-10'),\n(101, 3, 2, 1, '2024-07-12'),\n(102, 2, 3, 5, '2024-08-20'),\n(103, 3, 4, 9, '2024-09-01'),\n(104, 4, 5, 2, '2024-09-25');\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Order_Data",
+            "createdAt": "2024-11-07T12:57:32.778Z"
+        },
+        {
+            "id": "x4fU1qwpzrVNY1cm_TV1p",
+            "query": "-- View data in 'Order' Table \n\nSELECT * \nFROM 'Order';",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "View_Order_Data",
+            "createdAt": "2024-11-07T12:59:55.484Z"
+        },
+        {
+            "id": "yVQ7OWRO_zpH2204K3Q5C",
+            "query": "-- -- To create Payment Table\n\nCREATE TABLE Payment (\npaymentID INT PRIMARY KEY,\norderID INT,\ndate DATE,\namount DECIMAL(10, 2),\nmethod VARCHAR(50),\nFOREIGN KEY (orderID) REFERENCES 'Order' (orderID)\n);\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Payment_Table",
+            "createdAt": "2024-11-07T13:00:16.301Z"
+        },
+        {
+            "id": "RAfI2MrFV0uYmX8ofCVRW",
+            "query": "-- Insert data into Payment Table \n\nINSERT INTO Payment (paymentID,orderID, date, amount, method)\nVALUES \n(1,100, '2024-07-11', 1999.98, 'Credit Card'),\n(2, 101, '2024-07-13', 199.99, 'PayPal'),\n(3, 102, '2024-08-20', 2000.00, 'Cash'),\n(4, 103, '2024-09-25', 400.55, 'Zelle'),\n(5, 104, '2024-08-21', 2150.00, 'Cash');\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Payment_Data",
+            "createdAt": "2024-11-07T13:00:33.442Z"
+        },
+        {
+            "id": "4zNWUcfSo08GQBrExbt8W",
+            "query": "-- View Payment Table \n\nSELECT * \nFROM Payment;",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "View_Payment_Data",
+            "createdAt": "2024-11-07T13:00:53.386Z"
+        },
+        {
+            "id": "exj-OliGwwVZ3cZApT0iH",
+            "query": "-- a. WHERE clause\n-- Retrieve all payments made using Cash\n\nSELECT * \nFROM Payment\nWHERE method = 'Cash';\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Where_Clause",
+            "createdAt": "2024-11-07T13:01:15.251Z"
+        },
+        {
+            "id": "r3Jv-xAcms1825hguOTh-",
+            "query": "-- b. GROUP  BY\n-- Retrieve number of orders placed for each product\n\nSELECT Product.productname, COUNT(orderID) AS total_orders\nFROM 'Order'\nJOIN Product ON 'Order'.productID = Product.productID\nGROUP BY productname;\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Groupby",
+            "createdAt": "2024-11-07T13:01:31.086Z"
+        },
+        {
+            "id": "cZh0Nt6GQ6Qttw-mJK5La",
+            "query": "-- c. JOINS\n-- Retrieve all payments with customer information\n\nSELECT c.name, p.amount, p.date, p.method\nFROM Customer c\nJOIN 'Order' o ON c.customerID = o.customerID\nJOIN Payment p ON o.orderID = p.orderID;\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Joins",
+            "createdAt": "2024-11-07T13:01:42.400Z"
+        },
+        {
+            "id": "M1PNtteS6uDiz8rRL5QYz",
+            "query": "-- d. VIEWS\n-- Create a view for customer orders\n\nCREATE VIEW CustomerOrders AS\nSELECT c.name, p.productname, o.quantity, o.order_date\nFROM Customer c\nJOIN 'Order' o ON c.customerID = o.customerID\nJOIN Product p ON o.productID = p.productID;\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "View_Table",
+            "createdAt": "2024-11-07T13:01:59.581Z"
+        },
+        {
+            "id": "JJDaCTdrg_Azinsrs4QFQ",
+            "query": "-- Retrieve data from the VIEW\n\nSELECT * \nFROM CustomerOrders;\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "View_ViewTable",
+            "createdAt": "2024-11-07T13:02:14.736Z"
+        },
+        {
+            "id": "iosUwDxm6-07_4u7e3CZg",
+            "query": "-- e. AGGREGATE FUNCTIONS\n-- Retrieve average quantity ordered per product\n\nSELECT p.productname, AVG(o.quantity) AS avg_quantity\nFROM 'Order' o\nJOIN Product p ON o.productID = p.productID\nGROUP BY p.productname;\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "Aggregate_Functions",
+            "createdAt": "2024-11-07T13:02:30.421Z"
+        }
+    ]
+}
