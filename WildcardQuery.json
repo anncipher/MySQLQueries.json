@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "KoDe9g_zeI-Bq82ahNHy8",
+            "query": "-- g. WILDCARDS\n-- Retrieve customers with email addresses from yahoo mail\n\nSELECT name, email\nFROM Customer\nWHERE email LIKE '%@yahoo.com';\n",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "WildcardQuery",
+            "createdAt": "2024-11-08T16:07:42.198Z"
+        }
+    ]
+}
